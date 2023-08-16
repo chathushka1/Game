@@ -13,7 +13,7 @@
 }
 .river
 {
-    height: 713px;
+    height: 730px;
     width: 500%;
     top: 0px;
     bottom:0;
@@ -23,7 +23,7 @@
     background-image: url("../assets/River.PNG");
     position: absolute;
     z-index: 1;
-    animation: river 40s linear infinite;
+    animation: river 50s linear infinite;
 
 }
 
