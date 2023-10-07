@@ -54,32 +54,21 @@ document.addEventListener("DOMContentLoaded", () => {
     document.addEventListener("keydown", (event) => {
         const key = event.key.toLowerCase();
 
-        if (key === "arrowup" && boat.offsetTop > 220) {
+    /*    if (key === "arrowup" && boat.offsetTop > 220) {
             boat.style.top = `${boat.offsetTop - step}px`;
         } else if (key === "arrowdown" && boat.offsetTop + boat.clientHeight < 530) {
             boat.style.top = `${boat.offsetTop + step}px`;
         }
-    });
-});
-/*
-function canMoveUp(element) {
-    return element.offsetTop - step > 0 && !isCollidingWithBarriers(element, -step);
-}
-
-function canMoveDown(element, container) {
-    return element.offsetTop + element.clientHeight + step <= container.clientHeight &&
-        !isCollidingWithBarriers(element, step);
-}
-
-function isCollidingWithBarriers(element, movement) {
-    const nextPosition = element.offsetTop + movement;
-    for (const barrier of barriers) {
-        const barrierTop = barrier.offsetTop;
-        const barrierBottom = barrierTop + barrier.clientHeight;
-        if (nextPosition + element.clientHeight > barrierTop && nextPosition < barrierBottom) {
-            return true;
+    });*/
+        if (key === "arrowup" && boat.offsetTop > 220) {
+            boat.style.top = `${boat.offsetTop - step}px`;
+        } else if (key === "arrowdown" && boat.offsetTop + boat.clientHeight < 530) {
+            boat.style.top = `${boat.offsetTop + step}px`;
+        } else if (key === "arrowleft" && boat.offsetLeft > 0) {
+            boat.style.left = `${boat.offsetLeft - step}px`;
+        } else if (key === "arrowright" && boat.offsetLeft + boat.clientWidth < window.innerWidth) {
+            boat.style.left = `${boat.offsetLeft + step}px`;
         }
-    }
-    return false;
-}
-});*/
+    });
+
+});
